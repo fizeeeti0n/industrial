@@ -76,7 +76,7 @@ $('#fac').innerHTML = FACULTY.map(f => `
     <div class="av"><img src="${f.img}" alt="${f.name}" loading="lazy"></div>
     <h3>${f.name}</h3>
     <div class="rl">${f.role} · ${f.dept}</div>
-    <p>📞 Contact shared after login</p>
+    
   </article>
 `).join('');
 
