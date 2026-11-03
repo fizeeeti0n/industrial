@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UAP Industrial Tour — Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div>
+<header><nav class="glass" aria-label="Main">
+  <a href="#home" class="logo">⚓ Industrial Tour </a>
+  <ul id="links"></ul>
+  <button class="burger" id="bg" aria-label="Menu" aria-expanded="false">☰</button>
+</nav></header>
+<div id="mnav" class="glass"></div>
+
+<section id="home">
+  <canvas id="cv" aria-hidden="true"></canvas>
+  <div id="bubs"></div>
+  <div class="shade"></div>
+  <div class="wrap hero">
+    <p class="k in">University of Asia Pacific · 2027</p>
+    <h1 class="in">BEYOND THE<br><span>HORIZON</span></h1>
+    <h2 class="in">CSE Industrial Tour of 53x54 — Cox’s Bazar &amp; Saint Martin</h2>
+    <p class="sub in">An unforgettable journey of exploration, friendship, and discovery.</p>
+    <div class="meta in"><span>📅 Jan 8 – Jan 15, 2027</span><span>🕒 8 Days · 7 Nights</span><span style="background:rgba(255,128,102,.25);color:var(--coral)">⚠ Dates &amp; duration pending confirmation</span></div>
+    <div class="ctas in"><a class="btn p" href="#story">Explore the Journey</a><a class="btn g" href="#plan">View Tour Details</a></div>
+  </div>
+  <a class="chev" href="#story" aria-label="Scroll">⌄</a>
+</section>
+
+<div id="story"></div>
+
+<section class="s" id="plan">
+  <div class="wrap">
+    <div class="head reveal"><p class="eyebrow">Tour Plan</p><h2 class="h2">Cox’s Bazar – Saint Martin Tour Plan</h2><p class="intro">8 Days · 7 Nights · January 8 – 15. Tap a day to expand it.</p></div>
+    <div class="soft note reveal" role="note"><span>⚠</span><p style="margin:0">January 8–15, 2027 covers 8 calendar dates. The itinerary shows 7 overnight periods; organizers must confirm the final dates and duration before publishing.</p></div>
+    <ol class="tl" id="tl"></ol>
+    <p style="font-size:12px;color:rgba(255,255,255,.6)"><span class="ok">●</span> Confirmed &nbsp; <span class="tn">●</span> Tentative</p>
+  </div>
+</section>
+
+<section class="s deep" id="faculty">
+  <div class="wrap">
+    <div class="head reveal"><p class="eyebrow">Faculty</p><h2 class="h2">Faculty accompanying the tour</h2><p class="intro">Managed by authorized admins. Contact details appear only when approved.</p></div>
+    <span class="sample">Our Honorable Faculties</span>
+    <div class="grid g4" id="fac"></div>
+  </div>
+</section>
+
+<section class="s" id="organizers">
+  <div class="wrap">
+    <div class="head reveal"><p class="eyebrow">Organizers</p><h2 class="h2">Convenors &amp; organizing team</h2><p class="intro">The people behind planning, payments, logistics and your safety.</p></div>
+    <div class="org-banner reveal">
+      <img src="photos/organizer.jpeg" alt="Organizing Batch" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="s deep" id="notices">
+  <div class="wrap">
+    <div class="head reveal"><p class="eyebrow">Notice board</p><h2 class="h2">Announcements</h2></div>
+    <div class="two" style="margin-top:18px">
+      <div id="nts"></div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="gallery">
+  <div class="wrap">
+    <div class="head reveal"><p class="eyebrow">Gallery</p><h2 class="h2">Places we’ll see</h2><p class="intro">Explore scenic highlights of Cox’s Bazar and Saint Martin Island.</p></div>
+    <div class="tabs" id="tabs"></div>
+    <div class="gal" id="gal"></div>
+    <p style="font-size:12px;color:rgba(255,255,255,.5);margin-top:14px">Conservation: never collect or damage corals, shells or marine life.</p>
+  </div>
+</section>
+
+<section class="s deep" id="about">
+  <div class="wrap">
+    <div class="head reveal"><p class="eyebrow">About</p><h2 class="h2">Tour highlights</h2></div>
+    <div class="grid g4">
+      <div class="glass card">🏖<h3>World’s longest beach</h3><p>Walk the endless sands of Cox’s Bazar.</p></div>
+      <div class="glass card">🚢<h3>Ship to Saint Martin</h3><p>Cross the Bay of Bengal to the coral island.</p></div>
+      <div class="glass card">🌅<h3>Island sunrise &amp; sunset</h3><p>Two full days to explore and relax.</p></div>
+      <div class="glass card">🚙<h3>Patuartek by Chander Gari</h3><p>A coastal day trip on the iconic jeep.</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer><p>UAP Industrial Tour — Cox’s Bazar &amp; Saint Martin · University of Asia Pacific</p><p>Demo website. Faculty details, notices and payment information must be verified by the organizing committee.</p></footer>
+
+<button id="qb" aria-label="Quick info" aria-expanded="false">i</button>
+<div id="qp" class="glass"><b style="font-family:'Playfair Display',serif;font-size:18px">Quick info</b><p style="margin:8px 0 0">Jan 8 – 15, 2027 · 8 Days · 7 Nights</p><p style="color:var(--coral);font-size:12px;margin:2px 0">Pending organizer confirmation</p><p>Depart UAP: 7:00 PM by bus</p><a class="btn p" style="width:100%" href="tel:999">📞 Emergency 999</a></div>
+
+<script src="script.js"></script>
+</body>
+</html>
