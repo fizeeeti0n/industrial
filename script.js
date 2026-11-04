@@ -6,10 +6,11 @@ const NAV=[
   ['organizers','Organizers'],
   ['notices','Notices'],
   ['gallery','Gallery'],
-
+  ['dashboard.html','Dashboard']
 ];
-$('#links').innerHTML=NAV.map(([i,l])=>`<li><a href="#${i}" data-n="${i}">${l}</a></li>`).join('');
-$('#mnav').innerHTML=NAV.map(([i,l])=>`<a href="#${i}" data-n="${i}">${l}</a>`).join('');
+const href = i => i.endsWith('.html') ? i : '#'+i;
+$('#links').innerHTML=NAV.map(([i,l])=>`<li><a href="${href(i)}" data-n="${i}">${l}</a></li>`).join('');
+$('#mnav').innerHTML=NAV.map(([i,l])=>`<a href="${href(i)}" data-n="${i}">${l}</a>`).join('');
 $('#bg').onclick=()=>{const o=$('#mnav').classList.toggle('open');$('#bg').setAttribute('aria-expanded',o)};
 $('#mnav').onclick = event => {
   if (event.target.closest('a')) {
