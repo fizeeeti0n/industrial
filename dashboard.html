@@ -71,6 +71,9 @@ body{background:radial-gradient(1200px 600px at 80% -10%,rgba(8,124,167,.45),tra
 @keyframes pop{from{opacity:0;transform:scale(.85) translateY(14px)}to{opacity:1;transform:none}}
 @keyframes bob{50%{transform:translateY(-6px) rotate(6deg)}}
 @keyframes twinkle{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:1;transform:scale(1.2)}}
+
+/* Hidden sections requested: agency financial summary and Hall of Fame */
+#agency, .fullclub { display: none !important; }
 </style>
 </head>
 <body>
@@ -102,12 +105,17 @@ body{background:radial-gradient(1200px 600px at 80% -10%,rgba(8,124,167,.45),tra
 
   <div class="stats" id="stats"></div>
 
+  <!-- Required by dashboard.js: agency cost and collection summary -->
+  <section class="glass lb" id="agency" aria-label="Agency payment summary"></section>
+
   <section class="fullclub">
     <div class="sec-h" style="margin-top:34px"><p class="eyebrow">Hall of fame</p><h2>Fully paid <span class="fcount" id="fullcount">0</span></h2></div>
     <div class="fgrid" id="fullgrid"></div>
   </section>
 
   <div class="two-col">
+    <!-- Required by dashboard.js: overall 3.2 + 4.1 leaderboard -->
+    <section class="glass lb" id="lbAll"></section>
     <section class="glass lb" id="lb32"></section>
     <section class="glass lb" id="lb41"></section>
   </div>
